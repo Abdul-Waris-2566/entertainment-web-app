@@ -1,0 +1,56 @@
+@import 'tailwindcss';
+
+body {
+  font-family: 'Outfit', sans-serif;
+  color: #fff;
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
+  /* margin-inline: auto; */
+  /* background-color: var(--color-dark-blue); */
+}
+
+@theme {
+  --color-dark-blue: rgba(16, 20, 30, 1);
+  --color-greyish-blue: rgba(90, 105, 143, 1);
+  --color-semi-dark-blue: rgba(22, 29, 47, 1);
+  --color-red: rgba(252, 71, 71, 1);
+
+  --text-hd-lg: 2rem;
+  --text-hd-md: 1.5rem;
+  --text-hd-sm: 1.125rem;
+  --text-bd-md: 15px;
+  --text-bd-sm: 13px;
+}
+
+nav .active svg {
+  color: white;
+}
+
+/* Linear gradient overlay effect while hovering over movie element */
+
+.with-gradient-overlay:hover::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  z-index: 10;
+  cursor: pointer;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* .play-button {
+  display: none;
+}
+
+img:hover + .play-button {
+  display: flex;
+} */
+
+/* div:has():hover {
+  display: block;
+} */
